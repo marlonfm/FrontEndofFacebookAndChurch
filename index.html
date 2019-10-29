@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+    <script src="bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <title>Facebook Cadastro</title>
 </head>
 
@@ -18,7 +17,7 @@
     <div class="content1">
         <div class="content1-1">
             <div class="contentleft">
-                <h1><strong>facebook</strong></h1>
+                <h1 id="logofb"><strong>facebook</strong></h1>
             </div>
             <form method="POST">
                 <div class="contentright">
@@ -32,7 +31,7 @@
                         <a href="#">Esqueceu a conta?</a>
                     </div>
                     <div class="buttonEntrar">
-                        <button><strong>Entrar</strong></button>
+                        <button id="entre"><strong>Entrar</strong></button>
                     </div>
                 </div>
             </form>
@@ -41,6 +40,8 @@
 
     <div class="content2left">
         <div class="textconexao">
+            <div class="mudafundo"></div>
+            <div class="voltafundo"></div>
             <h5 style="color: #323363; "><strong>O Facebook ajuda você a se conectar e<br/> compartilhar com as pessoas que fazem parte<br/> da sua vida.</strong>
             </h5>
             <div class="image">
@@ -63,21 +64,21 @@
                         <input type="password" id="password" placeholder=" Nova senha" style="width: 398px" />
                     </div>
                     <div class="nascimento">
-                        <h6 style="color:#82818f; "><strong>Data de nascimento</strong></h6>
+                        <h6 style="color:#82818f"><strong>Data de nascimento</strong></h6>
                         <input type="date" id="date" style="border: 1px solid #aeaad3;" />
                     </div>
                     <div class="genero">
                         <h6 style="color:#82818f"><strong>Gênero</strong></h6>
-                        <input type="radio" id="radio" /> Feminino
-                        <input type="radio" id="radio" /> Masculino
-                        <input type="radio" id="radio" /> Personalizado
+                        <input type="radio" id="radio" name="sexo" /> Feminino
+                        <input type="radio" id="radio" name="sexo" /> Masculino
+                        <input type="radio" id="radio" name="sexo" /> Personalizado
 
                     </div>
                     <div class="obs">
-                        <p>Ao clicar em Inscreva-se, você concorda com nossos <a href="#">Termos,<br/> Política de Dados e Política de Cookies.</a> Você pode receber<br/> notificações por SMS e pode cancelar isso quando quiser.</p>
+                        <p class="obs1">Ao clicar em Inscreva-se, você concorda com nossos<a href="#">Termos,<br/> Política de Dados e Política de Cookies.</a> Você pode receber<br/> notificações por SMS e pode cancelar isso quando quiser.</p>
                     </div>
                     <div class="botao">
-                        <button type="submit"><strong>Cadastre-se</strong></button>
+                        <button type="submit" id="cadastre"><strong>Cadastre-se</strong></button>
                     </div>
                 </form>
                 <div class="textsmall">

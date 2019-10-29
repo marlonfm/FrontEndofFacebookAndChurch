@@ -127,7 +127,6 @@
         .content2cadastro {
             margin: auto;
             width: 80%;
-            max-width: 80%;
             height: 550px;
             margin-top: 40px;
         }
@@ -146,7 +145,6 @@
             margin-bottom: 10px;
             border: 1px solid #9292a0;
             border-radius: 6px;
-            font-size: 1.0em;
         }
         
         .nascimento {
@@ -238,5 +236,27 @@
         
         .final a {
             color: rgb(49, 77, 134);
+        }
+        
+        .mudafundo {
+            width: 20px;
+            height: 20px;
+            margin-top: -30px;
+            margin-left: -170px;
+            position: absolute;
+            font-size: 0.7em;
+            background-color: black;
+            border-radius: 10px;
+        }
+        
+        .voltafundo {
+            width: 20px;
+            height: 20px;
+            margin-top: -30px;
+            margin-left: -150px;
+            position: absolute;
+            font-size: 0.7em;
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
         }
         /* media querys */
