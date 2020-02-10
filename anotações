@@ -1,4 +1,24 @@
 Anotações do projeto do site para a church:
 
-para ocorrer a primeira animação, o margin-top do '.text' tem que estar em 300px.
+$l(function() {
+    $l(document).bind('scroll', function() {
+        if ($l(this).scrollTop() > 100) {
+            $l('.animationsh3').slideDown(2000);
+        } else {
+            $l(document).bind('scroll', function() {
+                if ($l(this).scrollTop() > 200) {
+                    $l('.animationsh3').css('padding-top', '90px');
+                }
+            });
+        }
+    });
+
+
+
+});
+
+
+
+
+
 
